@@ -1,0 +1,81 @@
+{
+    "head": {
+        "version": "6",
+        "platform": "web",
+        "date": "2025-06-26",
+        "title": "IoT-Based Gas Flow Meter Schematic",
+        "description": "Reconstructed schematic for Arduino Nano-based gas flow meter with Hall sensor, LCD, NodeMCU, and potentiometer."
+    },
+    "components": [
+        {
+            "name": "U1",
+            "type": "Arduino Nano"
+        },
+        {
+            "name": "U2",
+            "type": "NodeMCU ESP8266"
+        },
+        {
+            "name": "U3",
+            "type": "16x2 LCD"
+        },
+        {
+            "name": "S1",
+            "type": "Hall Effect Sensor (YF-S201 with rotor)"
+        },
+        {
+            "name": "R1",
+            "type": "10k\u03a9 Potentiometer"
+        },
+        {
+            "name": "J1",
+            "type": "DC Barrel Jack (Power Input)"
+        }
+    ],
+    "connections": [
+        {
+            "from": "S1.OUT",
+            "to": "U1.D2"
+        },
+        {
+            "from": "U3.RS",
+            "to": "U1.D7"
+        },
+        {
+            "from": "U3.EN",
+            "to": "U1.D6"
+        },
+        {
+            "from": "U3.D4-D7",
+            "to": "U1.D5-D2"
+        },
+        {
+            "from": "R1.WIPER",
+            "to": "U3.V0"
+        },
+        {
+            "from": "U2.TX",
+            "to": "U1.RX"
+        },
+        {
+            "from": "U2.RX",
+            "to": "U1.TX"
+        },
+        {
+            "from": "J1.VOUT",
+            "to": "U1.VIN"
+        },
+        {
+            "from": "J1.GND",
+            "to": "U1.GND"
+        },
+        {
+            "from": "U1.5V",
+            "to": "U3.VCC"
+        },
+        {
+            "from": "U1.GND",
+            "to": "U3.GND"
+        }
+    ]
+}

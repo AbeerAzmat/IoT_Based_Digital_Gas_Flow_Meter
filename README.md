@@ -117,4 +117,8 @@ Abeer Azmat, Sidra & Aqsa Sarfaraz
 “This project was developed as part of my undergraduate capstone, focusing on affordable and scalable IoT solutions in energy systems.”
 
 ## 📜 License
-This project is for educational and demonstration purposes only. Code snippets or design content may not be used commercially without permission.
+This project is protected. Redistribution or reuse of full source code without permission is not allowed
+
+##⚠️ Code Not Public:
+Full source code has not been published to protect intellectual property. If you are a reviewer or professor and would like access for academic purposes, please contact me at abeeerazmat77@gmail.com.
+
